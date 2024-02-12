@@ -1,0 +1,254 @@
+[
+  {
+    "title": "Chess Club",
+    "link": "https://example.com/chessclub",
+    "description": "Join us for weekly chess matches and tournaments.",
+    "tags": ["Chess", "Strategy", "Competition"],
+    "location": "Room 302",
+    "contact": [
+      {
+        "name": "John Doe",
+        "email": "john@example.com",
+        "phone": "123-456-7890"
+      }
+    ]
+  },
+  {
+    "title": "Robotics Team",
+    "link": "https://example.com/robotics",
+    "description": "Explore the world of robotics and compete in regional competitions.",
+    "tags": ["Robotics", "STEM", "Engineering"],
+    "location": "Lab B",
+    "contact": [
+      {
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "phone": "987-654-3210"
+      }
+    ]
+  },
+  {
+    "title": "Art Club",
+    "link": "https://example.com/artclub",
+    "description": "Express your creativity through various art mediums.",
+    "tags": ["Art", "Creativity", "Expression"],
+    "location": "Art Room",
+    "contact": [
+      {
+        "name": "Sarah Lee",
+        "email": "sarah@example.com",
+        "phone": "555-123-4567"
+      }
+    ]
+  },
+  {
+    "title": "Debate Team",
+    "link": "https://example.com/debate",
+    "description": "Engage in lively debates on various topics and compete in tournaments.",
+    "tags": ["Debate", "Public Speaking", "Argumentation"],
+    "location": "Auditorium",
+    "contact": [
+      {
+        "name": "Michael Johnson",
+        "email": "michael@example.com",
+        "phone": "321-555-9876"
+      }
+    ]
+  },
+  {
+    "title": "Coding Club",
+    "link": "https://example.com/codingclub",
+    "description": "Learn programming languages and work on coding projects.",
+    "tags": ["Coding", "Programming", "Technology"],
+    "location": "Computer Lab",
+    "contact": [
+      {
+        "name": "Alex Chen",
+        "email": "alex@example.com",
+        "phone": "789-012-3456"
+      }
+    ]
+  },
+  {
+    "title": "Music Ensemble",
+    "link": "https://example.com/musicensemble",
+    "description": "Play instruments and perform in concerts throughout the year.",
+    "tags": ["Music", "Performance", "Ensemble"],
+    "location": "Music Room",
+    "contact": [
+      {
+        "name": "David Brown",
+        "email": "david@example.com",
+        "phone": "234-567-8901"
+      }
+    ]
+  },
+  {
+    "title": "Environmental Club",
+    "link": "https://example.com/environmentalclub",
+    "description": "Work on projects to promote environmental sustainability and awareness.",
+    "tags": ["Environment", "Sustainability", "Activism"],
+    "location": "Science Lab",
+    "contact": [
+      {
+        "name": "Emily Davis",
+        "email": "emily@example.com",
+        "phone": "123-789-4560"
+      }
+    ]
+  },
+  {
+    "title": "Drama Club",
+    "link": "https://example.com/dramaclub",
+    "description": "Act, direct, and produce plays for the school community.",
+    "tags": ["Drama", "Theater", "Performance"],
+    "location": "Theater Room",
+    "contact": [
+      {
+        "name": "Olivia Taylor",
+        "email": "olivia@example.com",
+        "phone": "567-890-1234"
+      }
+    ]
+  },
+  {
+    "title": "Sports Club",
+    "link": "https://example.com/sportsclub",
+    "description": "Participate in various sports activities and tournaments.",
+    "tags": ["Sports", "Athletics", "Fitness"],
+    "location": "Gymnasium",
+    "contact": [
+      {
+        "name": "William Clark",
+        "email": "william@example.com",
+        "phone": "890-123-4567"
+      }
+    ]
+  },
+  {
+    "title": "Photography Club",
+    "link": "https://example.com/photographyclub",
+    "description": "Capture moments and develop photography skills.",
+    "tags": ["Photography", "Art", "Creativity"],
+    "location": "Photo Studio",
+    "contact": [
+      {
+        "name": "Sophia Martinez",
+        "email": "sophia@example.com",
+        "phone": "678-901-2345"
+      }
+    ]
+  },
+  {
+    "title": "Volunteering Club",
+    "link": "https://example.com/volunteeringclub",
+    "description": "Get involved in community service projects and make a difference.",
+    "tags": ["Volunteering", "Community Service", "Social Impact"],
+    "location": "Community Center",
+    "contact": [
+      {
+        "name": "Liam Wilson",
+        "email": "liam@example.com",
+        "phone": "901-234-5678"
+      }
+    ]
+  },
+  {
+    "title": "Science Club",
+    "link": "https://example.com/scienceclub",
+    "description": "Conduct experiments and explore various scientific concepts.",
+    "tags": ["Science", "STEM", "Experimentation"],
+    "location": "Science Lab",
+    "contact": [
+      {
+        "name": "Ethan Moore",
+        "email": "ethan@example.com",
+        "phone": "345-678-9012"
+      }
+    ]
+  },
+  {
+    "title": "Language Club",
+    "link": "https://example.com/languageclub",
+    "description": "Learn and practice different languages with peers.",
+    "tags": ["Language", "Culture", "Education"],
+    "location": "Language Lab",
+    "contact": [
+      {
+        "name": "Isabella Johnson",
+        "email": "isabella@example.com",
+        "phone": "678-901-2345"
+      }
+    ]
+  },
+  {
+    "title": "Cooking Club",
+    "link": "https://example.com/cookingclub",
+    "description": "Learn culinary skills and cook delicious recipes together.",
+    "tags": ["Cooking", "Culinary", "Food"],
+    "location": "Home Economics Kitchen",
+    "contact": [
+      {
+        "name": "Mia Anderson",
+        "email": "mia@example.com",
+        "phone": "123-456-7890"
+      }
+    ]
+  },
+  {
+    "title": "Film Club",
+    "link": "https://example.com/filmclub",
+    "description": "Watch and discuss classic and contemporary films.",
+    "tags": ["Film", "Cinema", "Discussion"],
+    "location": "Film Room",
+    "contact": [
+      {
+        "name": "James Wilson",
+        "email": "james@example.com",
+        "phone": "456-789-0123"
+      }
+    ]
+  },
+  {
+    "title": "Literature Club",
+    "link": "https://example.com/literatureclub",
+    "description": "Read and analyze literary works from different genres.",
+    "tags": ["Literature", "Reading", "Analysis"],
+    "location": "Library",
+    "contact": [
+      {
+        "name": "Ava Taylor",
+        "email": "ava@example.com",
+        "phone": "234-567-8901"
+      }
+    ]
+  },
+  {
+    "title": "Gardening Club",
+    "link": "https://example.com/gardeningclub",
+    "description": "Plant and maintain gardens around the school campus.",
+    "tags": ["Gardening", "Nature", "Environment"],
+    "location": "School Garden",
+    "contact": [
+      {
+        "name": "Logan Garcia",
+        "email": "logan@example.com",
+        "phone": "678-901-2345"
+      }
+    ]
+  },
+  {
+    "title": "Fitness Club",
+    "link": "https://example.com/fitnessclub",
+    "description": "Participate in workouts and activities to promote fitness and health.",
+    "tags": ["Fitness", "Health", "Exercise"],
+    "location": "Fitness Center",
+    "contact": [
+      {
+        "name": "Lucas Brown",
+        "email": "lucas@example.com",
+        "phone": "345-678-9012"
+      }
+    ]
+  }
+]
