@@ -14,8 +14,7 @@ const Header = () => {
   };
 
   const navigationItems = [
-    { label: 'HOME', path: '/' },
-    { label: 'CONTRIBUTE', path: '/contribute' },
+    { label: 'ADD AN EXTRACURRICULAR', path: 'https://docs.google.com/forms/d/e/1FAIpQLSdao57RZAkxMa1h4opDt5ELtLEY9ZNBO-MFzWKA-yqz_VP4Vg/viewform?usp=sf_link' },
   ];
 
   return (
