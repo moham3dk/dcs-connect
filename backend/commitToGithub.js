@@ -1,6 +1,6 @@
 // Create a new instance of GithubClient
-var githubClient = new GithubClient('mohamed-khettab', 'Scioto-Connect', 'sciotoconnect', 'my_token');
-var filename = 'client/src/data/extracurriculars.json';
+var githubClient = new GithubClient('mohamed-khettab', 'scioto-connect', 'sciotoconnect', 'my_token');
+var filename = 'frontend/src/data/extracurriculars.json';
 var email = 'my_email';
 
 // Function to commit spreadsheet changes to Github
