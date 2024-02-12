@@ -40,8 +40,6 @@ const InfoModal = ({ extracurricularData, onClose }) => {
           <div className="flex justify-center items-center mt-6 space-x-3">
             <a
               href={extracurricularData.link}
-              target="_blank"
-              rel="noopener noreferrer"
               className="flex items-center gap-2 bg-[#126954] text-white py-3 px-5 rounded-full hover:bg-opacity-80 text-lg md:text-xl ease-in-out duration-300"
             >
               View Website <FaExternalLinkAlt />

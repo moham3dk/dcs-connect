@@ -71,7 +71,7 @@ const Display = ({ extracurricularData }) => {
                 <p>
                   Something missing? Add an extracurricular{' '}
                   <a href="https://example.com" target="_blank" rel="noreferrer" className="underline">
-                    here.
+                    here
                   </a>
                 </p>
               </div>
