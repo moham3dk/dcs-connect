@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import InfoModal from './InfoModal';
 import { CiCircleInfo } from 'react-icons/ci';
-import { CiHeart } from 'react-icons/ci';
+import { CiBookmark } from "react-icons/ci";
 
 const Display = ({ extracurricularData }) => {
   const [bookmarks, setBookmarks] = useState(JSON.parse(localStorage.getItem('bookmarks')) || {});
@@ -105,9 +105,9 @@ const Display = ({ extracurricularData }) => {
                       }`}
                       onClick={() => toggleBookmark(extracurricular.title)}
                     >
-                      <CiHeart
+                      <CiBookmark
                         fill={bookmarks.hasOwnProperty(extracurricular.title) ? '#FFFFFF' : ''}
-                        className="text-3xl md:text-4xl text-[#126954]"
+                        className="text-xl md:text-2xl xl:text-3xl text-[#126954]"
                       />
                     </div>
                   </div>
