@@ -1,253 +1,231 @@
 [
   {
-    "title": "Chess Club",
-    "link": "https://example.com/chessclub",
-    "description": "Join us for weekly chess matches and tournaments.",
-    "tags": ["Chess", "Strategy", "Competition"],
-    "location": "Room 302",
+    "title": "Arts and Crafts Club",
+    "link": "https://www.dublinschools.net/site/default.aspx?PageType=3&ModuleInstanceID=4591&ViewID=7b97f7ed-8e5e-4120-848f-a8b4987d588f&RenderLoc=0&FlexDataID=9320&PageID=528",
+    "description": "Monthly meetings will explore various types of arts and crafts. Meet second tuesday of each month.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Arts",
+      "Open To All",
+      "Monthly",
+      "Free"
+    ],
+    "location": "Room C15",
     "contact": [
       {
-        "name": "John Doe",
-        "email": "john@example.com",
-        "phone": "123-456-7890"
+        "name": "Ms. Tompkins",
+        "email": "tompkins_maryjo@dublinschools.net",
+        "phone": "N/A"
       }
     ]
   },
   {
-    "title": "Robotics Team",
-    "link": "https://example.com/robotics",
-    "description": "Explore the world of robotics and compete in regional competitions.",
-    "tags": ["Robotics", "STEM", "Engineering"],
-    "location": "Lab B",
+    "title": "Astronomy Club",
+    "link": "https://www.instagram.com/dshs_astronomyclub/",
+    "description": "We meet every fourth Tuesday of the month before school, and participate in fun activities and crafts to learn more about our universe",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Academic",
+      "Open To All",
+      "Monthly",
+      "Free"
+    ],
+    "location": "Room J10",
     "contact": [
       {
-        "name": "Jane Smith",
-        "email": "jane@example.com",
-        "phone": "987-654-3210"
+        "name": "Mrs. Danner",
+        "email": "danner_kelsey@dublinschools.net",
+        "phone": "N/A"
       }
     ]
   },
   {
-    "title": "Art Club",
-    "link": "https://example.com/artclub",
-    "description": "Express your creativity through various art mediums.",
-    "tags": ["Art", "Creativity", "Expression"],
-    "location": "Art Room",
+    "title": "Black Youth United",
+    "link": "https://www.instagram.com/byu_dshs/",
+    "description": "Uniting through culture, service, and community. Meet first and third Thursday of each month.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Leadership",
+      "Open To All",
+      "Bi-weekly",
+      "Free"
+    ],
+    "location": "Room J4",
     "contact": [
       {
-        "name": "Sarah Lee",
-        "email": "sarah@example.com",
-        "phone": "555-123-4567"
-      }
-    ]
-  },
-  {
-    "title": "Debate Team",
-    "link": "https://example.com/debate",
-    "description": "Engage in lively debates on various topics and compete in tournaments.",
-    "tags": ["Debate", "Public Speaking", "Argumentation"],
-    "location": "Auditorium",
-    "contact": [
-      {
-        "name": "Michael Johnson",
-        "email": "michael@example.com",
-        "phone": "321-555-9876"
-      }
-    ]
-  },
-  {
-    "title": "Coding Club",
-    "link": "https://example.com/codingclub",
-    "description": "Learn programming languages and work on coding projects.",
-    "tags": ["Coding", "Programming", "Technology"],
-    "location": "Computer Lab",
-    "contact": [
-      {
-        "name": "Alex Chen",
-        "email": "alex@example.com",
-        "phone": "789-012-3456"
-      }
-    ]
-  },
-  {
-    "title": "Music Ensemble",
-    "link": "https://example.com/musicensemble",
-    "description": "Play instruments and perform in concerts throughout the year.",
-    "tags": ["Music", "Performance", "Ensemble"],
-    "location": "Music Room",
-    "contact": [
-      {
-        "name": "David Brown",
-        "email": "david@example.com",
-        "phone": "234-567-8901"
-      }
-    ]
-  },
-  {
-    "title": "Environmental Club",
-    "link": "https://example.com/environmentalclub",
-    "description": "Work on projects to promote environmental sustainability and awareness.",
-    "tags": ["Environment", "Sustainability", "Activism"],
-    "location": "Science Lab",
-    "contact": [
-      {
-        "name": "Emily Davis",
-        "email": "emily@example.com",
-        "phone": "123-789-4560"
-      }
-    ]
-  },
-  {
-    "title": "Drama Club",
-    "link": "https://example.com/dramaclub",
-    "description": "Act, direct, and produce plays for the school community.",
-    "tags": ["Drama", "Theater", "Performance"],
-    "location": "Theater Room",
-    "contact": [
-      {
-        "name": "Olivia Taylor",
-        "email": "olivia@example.com",
-        "phone": "567-890-1234"
-      }
-    ]
-  },
-  {
-    "title": "Sports Club",
-    "link": "https://example.com/sportsclub",
-    "description": "Participate in various sports activities and tournaments.",
-    "tags": ["Sports", "Athletics", "Fitness"],
-    "location": "Gymnasium",
-    "contact": [
-      {
-        "name": "William Clark",
-        "email": "william@example.com",
-        "phone": "890-123-4567"
-      }
-    ]
-  },
-  {
-    "title": "Photography Club",
-    "link": "https://example.com/photographyclub",
-    "description": "Capture moments and develop photography skills.",
-    "tags": ["Photography", "Art", "Creativity"],
-    "location": "Photo Studio",
-    "contact": [
-      {
-        "name": "Sophia Martinez",
-        "email": "sophia@example.com",
-        "phone": "678-901-2345"
-      }
-    ]
-  },
-  {
-    "title": "Volunteering Club",
-    "link": "https://example.com/volunteeringclub",
-    "description": "Get involved in community service projects and make a difference.",
-    "tags": ["Volunteering", "Community Service", "Social Impact"],
-    "location": "Community Center",
-    "contact": [
-      {
-        "name": "Liam Wilson",
-        "email": "liam@example.com",
-        "phone": "901-234-5678"
-      }
-    ]
-  },
-  {
-    "title": "Science Club",
-    "link": "https://example.com/scienceclub",
-    "description": "Conduct experiments and explore various scientific concepts.",
-    "tags": ["Science", "STEM", "Experimentation"],
-    "location": "Science Lab",
-    "contact": [
-      {
-        "name": "Ethan Moore",
-        "email": "ethan@example.com",
-        "phone": "345-678-9012"
-      }
-    ]
-  },
-  {
-    "title": "Language Club",
-    "link": "https://example.com/languageclub",
-    "description": "Learn and practice different languages with peers.",
-    "tags": ["Language", "Culture", "Education"],
-    "location": "Language Lab",
-    "contact": [
-      {
-        "name": "Isabella Johnson",
-        "email": "isabella@example.com",
-        "phone": "678-901-2345"
+        "name": "Mrs. Herbert",
+        "email": "herbert_kara@dublinschools.net",
+        "phone": "N/A"
       }
     ]
   },
   {
     "title": "Cooking Club",
-    "link": "https://example.com/cookingclub",
-    "description": "Learn culinary skills and cook delicious recipes together.",
-    "tags": ["Cooking", "Culinary", "Food"],
-    "location": "Home Economics Kitchen",
+    "link": "https://www.dublinschools.net/site/default.aspx?PageType=3&ModuleInstanceID=4591&ViewID=7b97f7ed-8e5e-4120-848f-a8b4987d588f&RenderLoc=0&FlexDataID=9325&PageID=528",
+    "description": "The purpose is to gather students who have an interest in cooking and provide an opportunity to prepare a variety of different items. Meet 2nd Monday of each month.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Social",
+      "Open To All",
+      "Monthly",
+      "Paid"
+    ],
+    "location": "Room A13",
     "contact": [
       {
-        "name": "Mia Anderson",
-        "email": "mia@example.com",
-        "phone": "123-456-7890"
+        "name": "Mrs. Dionisio",
+        "email": "dionisio_brooke@dublinschools.net",
+        "phone": "N/A"
       }
     ]
   },
   {
-    "title": "Film Club",
-    "link": "https://example.com/filmclub",
-    "description": "Watch and discuss classic and contemporary films.",
-    "tags": ["Film", "Cinema", "Discussion"],
-    "location": "Film Room",
+    "title": "Creative Writing Club",
+    "link": "https://www.dublinschools.net/site/default.aspx?PageType=3&ModuleInstanceID=4591&ViewID=7b97f7ed-8e5e-4120-848f-a8b4987d588f&RenderLoc=0&FlexDataID=9326&PageID=528",
+    "description": "We write creatively together and share our work. We also create and publish the school's yearly literary magazine",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Academic",
+      "Open To All",
+      "Bi-weekly",
+      "Free"
+    ],
+    "location": "Room C9",
     "contact": [
       {
-        "name": "James Wilson",
-        "email": "james@example.com",
-        "phone": "456-789-0123"
+        "name": "Mrs. Belmarez",
+        "email": "belmarez_hillary@dublinschools.net",
+        "phone": "N/A"
       }
     ]
   },
   {
-    "title": "Literature Club",
-    "link": "https://example.com/literatureclub",
-    "description": "Read and analyze literary works from different genres.",
-    "tags": ["Literature", "Reading", "Analysis"],
-    "location": "Library",
+    "title": "Drama Club",
+    "link": "https://www.dublinschools.net/site/default.aspx?PageType=3&ModuleInstanceID=4591&ViewID=7b97f7ed-8e5e-4120-848f-a8b4987d588f&RenderLoc=0&FlexDataID=9327&PageID=528",
+    "description": "Drama Club is a group for individuals who are interested in theatre. Meet second Thursday of each month.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Arts",
+      "Open To All",
+      "Monthly",
+      "Paid"
+    ],
+    "location": "Performing Arts Center",
     "contact": [
       {
-        "name": "Ava Taylor",
-        "email": "ava@example.com",
-        "phone": "234-567-8901"
+        "name": "Dr. Santanello",
+        "email": "santanello_patricia@dublinschools.net",
+        "phone": "N/A"
       }
     ]
   },
   {
-    "title": "Gardening Club",
-    "link": "https://example.com/gardeningclub",
-    "description": "Plant and maintain gardens around the school campus.",
-    "tags": ["Gardening", "Nature", "Environment"],
-    "location": "School Garden",
+    "title": "Dublin Rugby Club",
+    "link": "https://www.dublinrugby.org/",
+    "description": "The Dublin Rugby High School team instructs students from all three high schools in Dublin, Ohio in the fundamentals of rugby.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Sports",
+      "Open To All",
+      "Weekly",
+      "Paid"
+    ],
+    "location": "See Website",
     "contact": [
       {
-        "name": "Logan Garcia",
-        "email": "logan@example.com",
-        "phone": "678-901-2345"
+        "name": "N/A",
+        "email": "dublinrugby@rugbyohio.com.",
+        "phone": "(614) 531-2575"
       }
     ]
   },
   {
-    "title": "Fitness Club",
-    "link": "https://example.com/fitnessclub",
-    "description": "Participate in workouts and activities to promote fitness and health.",
-    "tags": ["Fitness", "Health", "Exercise"],
-    "location": "Fitness Center",
+    "title": "Tech Club",
+    "link": "https://www.instagram.com/dshstechclub/",
+    "description": "Explore the world of tech. Meet every other Thursday.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "STEM",
+      "Open To All",
+      "Bi-weekly",
+      "Free"
+    ],
+    "location": "Room C20",
     "contact": [
       {
-        "name": "Lucas Brown",
-        "email": "lucas@example.com",
-        "phone": "345-678-9012"
+        "name": "Ms. Reilly",
+        "email": "reilly_marcy@dublinschools.net",
+        "phone": "N/A"
+      }
+    ]
+  },
+  {
+    "title": "Ski & Snowboard Club",
+    "link": "https://sites.google.com/dublinschools.net/dublin-ski-board/home",
+    "description": "Ski & Snowboard Club. Where winter fun meets community on the slopes! Meet every Tuesday.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Sports",
+      "Open To All",
+      "Weekly",
+      "Paid"
+    ],
+    "location": "See Website",
+    "contact": [
+      {
+        "name": "Mr. Richardson",
+        "email": "pjrichardson625@gmail.com",
+        "phone": "N/A"
+      }
+    ]
+  },
+  {
+    "title": "Environmental Club",
+    "link": "https://www.dublinschools.net/site/default.aspx?PageType=3&ModuleInstanceID=4591&ViewID=7b97f7ed-8e5e-4120-848f-a8b4987d588f&RenderLoc=0&FlexDataID=9330&PageID=528",
+    "description": "We will investigate environmental issues and develop short and long-term projects (schoolwide and individually) to lessen our environmental impact. Meet 1st and 3rd Tuesday of each month.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "STEM",
+      "Open To All",
+      "Bi-weekly",
+      "Free"
+    ],
+    "location": "Room A10",
+    "contact": [
+      {
+        "name": "Mrs. Shoup",
+        "email": "shoup_kristin@dublinschools.net",
+        "phone": "N/A"
       }
     ]
   }
