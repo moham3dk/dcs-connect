@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import InfoModal from './InfoModal';
 import { CiCircleInfo } from 'react-icons/ci';
-import { CiBookmark } from "react-icons/ci";
+import { CiBookmark } from 'react-icons/ci';
 
 const Display = ({ extracurricularData }) => {
   const [bookmarks, setBookmarks] = useState(JSON.parse(localStorage.getItem('bookmarks')) || {});
@@ -49,25 +49,25 @@ const Display = ({ extracurricularData }) => {
     <div className="flex size-full no-scrollbar max-h-[92vh] min-h-[92vh] mt-[8vh] bg-gradient-to-b from-[#126954] via-white to-white select-none">
       <div className="flex flex-col md:flex-row w-full">
         <div className="flex flex-col w-full">
-          <div className="mx-auto w-[95%] md:w-[97.5%] my-5 md:my-7 xl:my-10">
-            <div className="flex flex-row w-full bg-white border-2 rounded-lg justify-center shadow-xl space-x-5 md:space-x-10 px-4 md:px-8 xl:px-16">
+          <div className="mx-auto w-[95%] md:w-[97.5%] my-3 md:my-5 xl:my-8">
+            <div className="flex flex-row w-full bg-white border-2 rounded-lg justify-center shadow-xl space-x-3 md:space-x-6 px-3 md:px-6 xl:px-12 py-2 md:py-3">
               <input
                 type="text"
                 placeholder="Search an EC or Category..."
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
-                className="bg-white text-gray-900 border-2 py-2 my-[2.5vh] w-[75%] md:w-[85%] rounded-md shadow-xl px-4 md:px-8 xl:px-16 ring-0"
+                className="bg-white text-gray-900 border-2 py-2 my-[1vh] w-[70%] md:w-[80%] rounded-md shadow-xl px-3 md:px-6 xl:px-12 ring-0"
               />
-              <label className="flex justify-center items-center space-x-3">
+              <label className="flex justify-center items-center space-x-2 md:space-x-4">
                 <input type="checkbox" className="size-4" onChange={() => setShowBookmarks(!showBookmarks)} />
-                <p className="text-lg md:text-xl md:text-nowrap text-center">&nbsp;View Bookmarks</p>
+                <p className="text-base md:text-lg md:text-nowrap text-center">&nbsp;View Bookmarks</p>
               </label>
             </div>
           </div>
           <div className="h-full max-h-full overflow-y-scroll no-scrollbar scroll-smooth">
             {filteredExtracurriculars.length === 0 && (
-              <div className="flex justify-center items-center h-[50vh] flex-col text-[#126954] text-xl md:text-4xl font-bold text-center">
-                <p className="py-4">No Extracurriculars Found</p>
+              <div className="flex justify-center items-center h-[50vh] flex-col text-[#126954] text-lg md:text-2xl font-bold text-center">
+                <p className="py-3">No Extracurriculars Found</p>
                 <p>
                   Something missing? Add an extracurricular{' '}
                   <a href="https://example.com" target="_blank" rel="noreferrer" className="underline">
@@ -76,38 +76,38 @@ const Display = ({ extracurricularData }) => {
                 </p>
               </div>
             )}
-            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[95%] md:w-[97.5%] mx-auto">
+            <div className="grid gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[95%] md:w-[97.5%] mx-auto">
               {filteredExtracurriculars.map((extracurricular) => (
                 <div
-                  key={extracurricular.title}
-                  className="flex flex-col items-center bg-white border-2 rounded-lg w-full mx-auto mb-2 md:mb-4 text-center"
+                  key={extracurricular.taitle}
+                  className="flex flex-col items-center bg-white border-2 rounded-lg w-full mx-auto mb-2 md:mb-3 text-center"
                 >
                   <div className="w-full">
-                    <h1 className="text-[#126954] text-2xl xl:text-3xl py-2 md:py-4">
+                    <h1 className="text-[#126954] text-lg md:text-xl xl:text-2xl py-2 md:py-3">
                       <span className="font-bold">SCIOTO</span> CONNECT
                     </h1>
-                    <h1 className="text-[#126954] text-3xl md:text-4xl lg:text-5xl font-bold pt-2 pb-4 xl:w-[97.5%] mx-auto">
+                    <h1 className="text-[#126954] text-2xl md:text-3xl lg:text-4xl font-bold pt-2 pb-3 xl:w-[97.5%] mx-auto">
                       {extracurricular.title}
                     </h1>
                     <p className="text-base md:text-lg lg:text-xl py-2 px-2"> {extracurricular.description}</p>
                   </div>
-                  <div className="flex items-center justify-center w-full md:w-auto md:justify-end m-6 md:m-10 space-x-4">
+                  <div className="flex items-center justify-center w-full md:w-auto md:justify-end m-4 md:m-6 space-x-3 md:space-x-4">
                     <p
-                      className="text-lg md:text-xl bg-[#126954] text-white px-6 py-2 md:px-8 md:py-3 rounded-full flex items-center justify-center transition duration-300 hover:bg-opacity-80"
+                      className="text-base md:text-lg bg-[#126954] text-white px-4 py-1 md:px-5 md:py-2 rounded-full flex items-center justify-center transition duration-300 hover:bg-opacity-80"
                       onClick={() => openInfoModal(extracurricular)}
                     >
                       More Info
-                      <CiCircleInfo className="ml-2 size-8" />
+                      <CiCircleInfo className="ml-1 md:ml-2 size-6 md:size-8" />
                     </p>
                     <div
-                      className={`rounded-full p-3 md:p-4 border-2 hover:cursor-pointer ease-in-out duration-300 ${
+                      className={`rounded-full p-2 md:p-3 border-2 hover:cursor-pointer ease-in-out duration-300 ${
                         bookmarks.hasOwnProperty(extracurricular.title) ? 'bg-[#126954] hover:bg-opacity-80' : ''
                       }`}
                       onClick={() => toggleBookmark(extracurricular.title)}
                     >
                       <CiBookmark
                         fill={bookmarks.hasOwnProperty(extracurricular.title) ? '#FFFFFF' : ''}
-                        className="text-xl md:text-2xl xl:text-3xl text-[#126954]"
+                        className="text-lg md:text-xl xl:text-2xl text-[#126954]"
                       />
                     </div>
                   </div>
