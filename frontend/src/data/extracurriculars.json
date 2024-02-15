@@ -297,5 +297,28 @@
         "phone": "N/A"
       }
     ]
+  },
+  {
+    "title": "Fencing Club",
+    "link": "https://www.instagram.com/dublinfencingclub/",
+    "description": "En garde! Join our fencing club for thrilling duels and skillful strikes. Meeting every Thursday.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Sports",
+      "Open To All",
+      "Weekly",
+      "Paid"
+    ],
+    "location": "Front main hallway of school",
+    "contact": [
+      {
+        "name": "Mr. Birkoff",
+        "email": "birkhoff_simon@dublinschools.net",
+        "phone": "N/A"
+      }
+    ]
   }
 ]
