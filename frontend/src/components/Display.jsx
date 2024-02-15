@@ -86,7 +86,7 @@ const Display = ({ extracurricularData }) => {
                     <h1 className="text-[#126954] text-2xl xl:text-3xl py-2 md:py-4">
                       <span className="font-bold">SCIOTO</span> CONNECT
                     </h1>
-                    <h1 className="text-[#126954] text-3xl md:text-4xl lg:text-5xl font-bold pt-2 pb-4">
+                    <h1 className="text-[#126954] text-3xl md:text-4xl lg:text-5xl font-bold pt-2 pb-4 xl:w-[97.5%] mx-auto">
                       {extracurricular.title}
                     </h1>
                     <p className="text-base md:text-lg lg:text-xl py-2 px-2"> {extracurricular.description}</p>
