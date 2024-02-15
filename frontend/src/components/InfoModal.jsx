@@ -11,7 +11,7 @@ const InfoModal = ({ extracurricularData, onClose }) => {
     <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-20 z-50">
       <div className="w-11/12 md:w-9/12 lg:w-8/12 xl:w-7/12 bg-white rounded-xl border-2">
         <div className="text-center py-4">
-          <h1 className="flex text-4xl md:text-5xl lg:text-6xl font-bold pb-4 text-[#126954]">
+          <h1 className="block text-4xl md:text-5xl lg:text-6xl font-bold pb-4 text-[#126954]">
             {extracurricularData.title}
           </h1>
           <p className="text-lg lg:text-xl py-2 px-4">{extracurricularData.description}</p>
