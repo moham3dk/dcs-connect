@@ -228,5 +228,97 @@
         "phone": "N/A"
       }
     ]
+  },
+  {
+    "title": "Esports Competition Club",
+    "link": "https://www.dublinschools.net/site/default.aspx?PageType=3&ModuleInstanceID=4591&ViewID=7b97f7ed-8e5e-4120-848f-a8b4987d588f&RenderLoc=0&FlexDataID=45246&PageID=528",
+    "description": "Level up with us in our esports competition club!",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Social",
+      "Open To All",
+      "Weekly",
+      "Paid"
+    ],
+    "location": "Library Lab 2",
+    "contact": [
+      {
+        "name": "Mr. Saiter",
+        "email": "saiter_jason@dublinschools.net",
+        "phone": "N/A"
+      }
+    ]
+  },
+  {
+    "title": "FCCLA Club",
+    "link": "https://www.instagram.com/sciotofccla/",
+    "description": "Empowering future leaders in family, career, and community through FCCLA.  Meeting on the 1st and 3rd Wednesday of each month.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Leadership",
+      "Open To All",
+      "Bi-weekly",
+      "Free"
+    ],
+    "location": "Room A13",
+    "contact": [
+      {
+        "name": "Mrs. Dionisio",
+        "email": "dionisio.5@dublinstudents.net",
+        "phone": "N/A"
+      }
+    ]
+  },
+  {
+    "title": "FCA Club",
+    "link": "https://www.instagram.com/dshsirishfca/",
+    "description": "Unite faith and athletics in the Fellowship of Christian Athletes. Meeting every Friday.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Leadership",
+      "Open To All",
+      "Weekly",
+      "Free"
+    ],
+    "location": "Room G2",
+    "contact": [
+      {
+        "name": "Mr. Schafer",
+        "email": "schafer_james@dublinschools.net",
+        "phone": "N/A"
+      }
+    ]
+  },
+  {
+    "title": "Fencing Club",
+    "link": "https://www.instagram.com/dublinfencingclub/",
+    "description": "En garde! Join our fencing club for thrilling duels and skillful strikes. Meeting every Thursday.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Sports",
+      "Open To All",
+      "Weekly",
+      "Paid"
+    ],
+    "location": "Front main hallway of school",
+    "contact": [
+      {
+        "name": "Mr. Birkoff",
+        "email": "birkhoff_simon@dublinschools.net",
+        "phone": "N/A"
+      }
+    ]
   }
 ]
