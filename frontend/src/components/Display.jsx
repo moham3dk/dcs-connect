@@ -108,7 +108,7 @@ const Display = ({ extracurricularData }) => {
                       className={`rounded-full p-2 md:p-3 border hover:cursor-pointer ease-in-out duration-300 ${
                         bookmarks.hasOwnProperty(extracurricular.title)
                           ? ' hover:md:bg-opacity-80 text-white border-white bg-[#126954]'
-                          : 'border-[#126954] hover:bg-neutral-200 bg-opacity-20 text-[#126954]'
+                          : 'hover:border-[#126954] bg-opacity-20 hover:text-[#126954]'
                       }`}
                       onClick={() => toggleBookmark(extracurricular.title)}
                     >
