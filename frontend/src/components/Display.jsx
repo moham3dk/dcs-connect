@@ -70,7 +70,12 @@ const Display = ({ extracurricularData }) => {
                 <p className="py-3">No Extracurriculars Found</p>
                 <p>
                   Something missing? Add an extracurricular{' '}
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdao57RZAkxMa1h4opDt5ELtLEY9ZNBO-MFzWKA-yqz_VP4Vg/viewform?usp=sf_link" target="_blank" rel="noreferrer" className="underline">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdao57RZAkxMa1h4opDt5ELtLEY9ZNBO-MFzWKA-yqz_VP4Vg/viewform?usp=sf_link"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline"
+                  >
                     here
                   </a>
                 </p>
@@ -100,15 +105,14 @@ const Display = ({ extracurricularData }) => {
                       <CiCircleInfo className="ml-1 md:ml-2 size-6 md:size-8" />
                     </p>
                     <div
-                      className={`rounded-full p-2 md:p-3 border-2 hover:cursor-pointer ease-in-out duration-300 ${
-                        bookmarks.hasOwnProperty(extracurricular.title) ? 'bg-[#126954] hover:bg-opacity-80' : ''
+                      className={`rounded-full p-2 md:p-3 border-2 hover:cursor-pointer ease-in-out duration-300  ${
+                        bookmarks.hasOwnProperty(extracurricular.title)
+                          ? 'bg-[#126954] hover:md:bg-opacity-80 text-white'
+                          : 'hover:border-[#126954] hover:text-[#126954]'
                       }`}
                       onClick={() => toggleBookmark(extracurricular.title)}
                     >
-                      <CiBookmark
-                        fill={bookmarks.hasOwnProperty(extracurricular.title) ? '#FFFFFF' : ''}
-                        className="text-lg md:text-xl xl:text-2xl text-[#126954]"
-                      />
+                      <CiBookmark className="text-lg md:text-xl xl:text-2xl" />
                     </div>
                   </div>
                 </div>
