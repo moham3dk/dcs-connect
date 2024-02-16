@@ -70,7 +70,7 @@ const Display = ({ extracurricularData }) => {
                 <p className="py-3">No Extracurriculars Found</p>
                 <p>
                   Something missing? Add an extracurricular{' '}
-                  <a href="https://example.com" target="_blank" rel="noreferrer" className="underline">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdao57RZAkxMa1h4opDt5ELtLEY9ZNBO-MFzWKA-yqz_VP4Vg/viewform?usp=sf_link" target="_blank" rel="noreferrer" className="underline">
                     here
                   </a>
                 </p>
