@@ -105,10 +105,10 @@ const Display = ({ extracurricularData }) => {
                       <CiCircleInfo className="ml-1 md:ml-2 size-6 md:size-8" />
                     </p>
                     <div
-                      className={`rounded-full p-2 md:p-3 border-2 hover:cursor-pointer ease-in-out duration-300  ${
+                      className={`rounded-full p-2 md:p-3 border hover:cursor-pointer ease-in-out duration-300 ${
                         bookmarks.hasOwnProperty(extracurricular.title)
-                          ? 'bg-[#126954] hover:md:bg-opacity-80 text-white'
-                          : 'hover:border-[#126954] hover:text-[#126954]'
+                          ? ' hover:md:bg-opacity-80 text-white border-white bg-[#126954]'
+                          : 'border-[#126954] hover:bg-neutral-200 bg-opacity-20 text-[#126954]'
                       }`}
                       onClick={() => toggleBookmark(extracurricular.title)}
                     >
