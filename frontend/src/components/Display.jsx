@@ -46,7 +46,7 @@ const Display = ({ extracurricularData }) => {
   );
 
   return (
-    <div className="flex size-full no-scrollbar max-h-[92vh] min-h-[92vh] mt-[8vh] bg-gradient-to-b from-[#126954] via-white to-white select-none">
+    <div className="flex size-full no-scrollbar max-h-[92vh] min-h-[92vh] mt-[8vh] bg-gradient-to-b from-[#126954] via-white to-white">
       <div className="flex flex-col md:flex-row w-full">
         <div className="flex flex-col w-full">
           <div className="mx-auto w-[95%] md:w-[97.5%] my-3 md:my-5 xl:my-8">

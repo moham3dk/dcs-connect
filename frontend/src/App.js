@@ -7,7 +7,6 @@ import extracurricularData from './data/extracurriculars.json';
 const App = () => {
   return (
     <>
-      {/*It's only one page so we can render everything here :D*/}
       <Header />
       <Display extracurricularData={extracurricularData} />
     </>
