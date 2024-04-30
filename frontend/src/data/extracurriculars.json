@@ -320,5 +320,28 @@
         "phone": "N/A"
       }
     ]
+  },
+  {
+    "title": "French Club",
+    "link": "https://www.instagram.com/p/C0hsdG7Rncx/?img_index=1",
+    "description": "Bonjour! Join us in celebrating French language and culture in our French club! Meeting 1st Wednesday of each month.",
+    "tags": [
+      "Freshman",
+      "Sophomore",
+      "Junior",
+      "Senior",
+      "Social",
+      "Open To All",
+      "Monthly",
+      "Paid"
+    ],
+    "location": "Room A5",
+    "contact": [
+      {
+        "name": "Mme Heaton",
+        "email": "heaton_heidi@dublinschools.net",
+        "phone": "N/A"
+      }
+    ]
   }
 ]
