@@ -343,26 +343,5 @@
         "phone": "N/A"
       }
     ]
-  },
-  {
-    "title": "Club",
-    "link": "google.com",
-    "description": "None",
-    "tags": [
-      "Sophomore",
-      "Junior",
-      "STEM",
-      "Application Required",
-      "Bi-weekly",
-      "Paid"
-    ],
-    "location": "Scioto",
-    "contact": [
-      {
-        "name": "asdfasdf",
-        "email": "asdfasdf",
-        "phone": "asdfasfd"
-      }
-    ]
   }
 ]
