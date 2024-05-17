@@ -13,13 +13,15 @@
       "Leadership",
       "Open To All",
       "Monthly",
-      "Paid"
+      "Paid",
+      "Room A5"
     ],
-    "location": "Mme Heaton",
+    "location": "Room A5",
     "contact": [
       {
-        "name": "Heidi Heaton",
-        "email": "N/A"
+        "name": "Mme Heaton",
+        "email": "Heidi Heaton",
+        "phone": "N/A"
       }
     ]
   }
