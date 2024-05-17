@@ -1,55 +1,52 @@
-// Function to transfer approved extracurricular responses to a database
 function transferResponses() {
-  // Log a message indicating the transfer process has begun
-  Logger.log('Transferring Responses...');
+  var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  var responsesSheet = spreadsheet.getActiveSheet();
+  var extracurricularsSheet;
 
-  // Get the range of responses
-  var range = responses.getDataRange();
+  switch (responsesSheet.getName()) {
+    case sciotoFormResponses.getName():
+      extracurricularsSheet = sciotoExtracurriculars;
+      break;
+    case coffmanFormResponses.getName():
+      extracurricularsSheet = coffmanExtracurriculars;
+      break;
+    case jeromeFormResponses.getName():
+      extracurricularsSheet = jeromeExtracurriculars;
+      break;
+    default:
+      Logger.log("Unknown sheet: " + responsesSheet.getName());
+      return;
+  }
 
-  // Get the values within the range
+  Logger.log("Transferring Responses...");
+  var range = responsesSheet.getDataRange();
   var values = range.getValues();
-
-  // Array to store indices of approved extracurriculars
   var approvedExtracurriculars = [];
 
-  // Loop through each row of values
   for (var i = 1; i < values.length; i++) {
     var row = values[i];
-    // Check if the approval status of the extracurricular is "Approved"
-    if (row[approvalStatusColumn - 1] === 'Approved') {
-      // Update the approval status of the extracurricular
-      row[approvalStatusColumn - 1] = 'Sent to Database';
-
-      // Add the index of the approved extracurricular to the array
+    if (row[approvalRow] === "Approved") {
+      row[approvalRow] = "Sent to Database";
       approvedExtracurriculars.push(i + 1);
+      Logger.log("Row " + (i + 1) + " is approved. Adding to database.");
 
-      // Log a message indicating the approved extracurricular is being added to the database
-      Logger.log('Row ' + i + ' is approved. Adding to database.');
+      var title = row[extracurricularNameRow];
+      var link = row[extracurricularLinkRow];
+      var description = row[extracurricularDescriptionRow];
+      var tags = row.slice(gradeLevelRow, extracurricularLocationRow).join(", ");
+      var location = row[extracurricularLocationRow];
+      var contact = row.slice(contactNameRow, contactPhoneRow + 1).join(" - ");
 
-      // Extract relevant information from the row
-      var title = row[4];
-      var link = row[5];
-      var description = row[6];
-      var tags = row.slice(7, 12).join(', ');
-      var location = row[12];
-      var contact = row.slice(13, 16).join(' - ');
-
-      // Append the extracted information to the extracurriculars sheet
-      extracurriculars.appendRow([title, link, description, tags, location, contact]);
+      extracurricularsSheet.appendRow([title, link, description, tags, location, contact]);
     } else {
-      // Log a message indicating the extracurricular has not been approved yet
-      Logger.log('Row ' + i + ' has not been approved yet or is already in the database.');
+      Logger.log("Row " + (i + 1) + " has not been approved yet.");
     }
   }
 
-  // Log the approved extracurriculars
-  Logger.log('Approved extracurriculars: ' + approvedExtracurriculars);
-
-  // Set the values of the original range to the new valuess
+  Logger.log("Approved extracurriculars: " + approvedExtracurriculars.join(", "));
   range.setValues(values);
 
-  // If every row is filled, commit to Github
-  if (checkUnfilledRows()) {
-    commitToGithub();
+  if (checkUnfilledRows(extracurricularsSheet)) {
+    commitToGitHub(extracurricularsSheet);
   }
 }

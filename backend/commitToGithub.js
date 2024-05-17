@@ -1,16 +1,21 @@
-// Create a new instance of GithubClient
-var githubClient = new GithubClient('mohamed-khettab', 'scioto-connect', 'sciotoconnect', 'my_token');
-var filename = 'frontend/src/data/extracurriculars.json';
-var email = 'my_email';
+function commitToGitHub(sheet) {
+  var gitHubClient = new GitHubClient("mohamed-khettab", "dcs-connect", "dcsconnect", "my_token");
+  var email = "my_email";
+  var filename;
 
-// Function to commit spreadsheet changes to Github
-function commitToGithub() {
-  // Get the JSON content of the extracurriculars spreadsheet
-  var content = convertToJSON();
+  if (sheet == sciotoExtracurriculars) {
+    filename = "frontend/src/data/extracurriculars/scioto_extracurriculars.json";
+  } else if (sheet == coffmanExtracurriculars) {
+    filename = "frontend/src/data/extracurriculars/coffman_extracurriculars.json";
+  } else if (sheet == jeromeExtracurriculars) {
+    filename = "frontend/src/data/extracurriculars/jerome_extracurriculars.json";
+  } else {
+    Logger.log("Unknown sheet: " + sheet.getName());
+    return;
+  }
 
 
-  var commitUrl = githubClient.commit(content, filename, email);
-  Logger.log("New commit URL: " + commitUrl);
-
-  Logger.log('Commited Successfully!');
+  var content = convertToJSON(sheet);
+  gitHubClient.commit(content, filename, email);
+  Logger.log("Commited Successfully!");
 }

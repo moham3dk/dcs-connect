@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Scioto from './pages/Scioto';
@@ -15,9 +11,9 @@ const App = () => {
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path='/scioto' element={<Scioto/>}/>
-        <Route path='/jerome' element={<Jerome/>}/>
-        <Route path='/coffman' element={<Coffman/>}/>
+        <Route path="/scioto" element={<Scioto />} />
+        <Route path="/jerome" element={<Jerome />} />
+        <Route path="/coffman" element={<Coffman />} />
       </Routes>
     </Router>
   );
