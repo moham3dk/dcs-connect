@@ -3,7 +3,7 @@ import InfoModal from './InfoModal';
 import { CiCircleInfo } from 'react-icons/ci';
 import { CiBookmark } from 'react-icons/ci';
 
-const Display = ({ extracurricularData }) => {
+const Display = ({ extracurricularData, schoolName}) => {
   const [bookmarks, setBookmarks] = useState(JSON.parse(localStorage.getItem('bookmarks')) || {});
   const [showBookmarks, setShowBookmarks] = useState(false);
   const [searchValue, setSearchValue] = useState('');
@@ -89,7 +89,7 @@ const Display = ({ extracurricularData }) => {
                 >
                   <div className="w-full">
                     <h1 className="text-[#126954] text-lg md:text-xl xl:text-2xl py-2 md:py-3">
-                      <span className="font-bold">SCIOTO</span> CONNECT
+                      <span className="font-bold">{schoolName}</span> CONNECT
                     </h1>
                     <h1 className="text-[#126954] text-2xl md:text-3xl lg:text-4xl font-bold pt-2 pb-3 xl:w-[97.5%] mx-auto">
                       {extracurricular.title}

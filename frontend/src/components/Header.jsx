@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({schoolName, link}) => {
   const [isOpen, setNavOpen] = useState(false);
 
   const handleNav = () => {
@@ -15,14 +16,16 @@ const Header = () => {
   return (
     <div className="shadow-xl fixed w-full top-0 bg-white z-30 text-center">
       <div className="flex justify-between items-center h-[8vh] max-w-7xl 2xl:max-w-[1800px] mx-auto px-4 text-[#126954]">
+        <Link to="/">
         <h1 className="flex items-center text-2xl sm:text-4xl">
-          <span className="font-bold">SCIOTO</span>&nbsp;CONNECT
+          <span className="font-bold">{schoolName}</span>&nbsp;CONNECT
         </h1>
+        </Link>
         <ul className="hidden xl:flex justify-center lg:text-xl space-x-8">
             <li
               className="hover:bg-opacity-80 py-2 px-4 rounded-lg font-bold ease-in-out duration-300 text-white bg-[#126954]"
             >
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdao57RZAkxMa1h4opDt5ELtLEY9ZNBO-MFzWKA-yqz_VP4Vg/viewform?usp=sf_link" target="_blank" rel="noreferrer">
+              <a href={link} target="_blank" rel="noreferrer">
                 ADD AN EXTRACURRICULAR
               </a>
             </li>
@@ -36,7 +39,7 @@ const Header = () => {
           }`}
         >
           <li  className="text-center text-lg font-bold py-4 border-b border-gray-300">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdao57RZAkxMa1h4opDt5ELtLEY9ZNBO-MFzWKA-yqz_VP4Vg/viewform?usp=sf_link" target="_blank" rel="noreferrer" onClick={closeNav
+              <a href={link} target="_blank" rel="noreferrer" onClick={closeNav
             }>
                 ADD AN EXTRACURRICULAR
               </a>
