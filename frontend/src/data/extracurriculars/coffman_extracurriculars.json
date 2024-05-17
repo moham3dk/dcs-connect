@@ -9,13 +9,15 @@
       "STEM",
       "Open To All",
       "Bi-weekly",
-      "Paid"
+      "Paid",
+      "None"
     ],
     "location": "None",
     "contact": [
       {
         "name": "None",
-        "email": "None"
+        "email": "None",
+        "phone": "None"
       }
     ]
   }
