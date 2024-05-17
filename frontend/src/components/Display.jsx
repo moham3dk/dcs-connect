@@ -3,26 +3,29 @@ import InfoModal from './InfoModal';
 import { CiCircleInfo } from 'react-icons/ci';
 import { CiBookmark } from 'react-icons/ci';
 
-const Display = ({ extracurricularData, schoolName }) => {
-  const [bookmarks, setBookmarks] = useState(JSON.parse(localStorage.getItem('bookmarks')) || {});
+const Display = ({ extracurricularData, schoolName, pageIdentifier }) => {
+  // Append pageIdentifier to localStorage key
+  const bookmarkKey = `bookmarks_${pageIdentifier}`;
+
+  const [bookmarks, setBookmarks] = useState(JSON.parse(localStorage.getItem(bookmarkKey)) || {});
   const [showBookmarks, setShowBookmarks] = useState(false);
   const [searchValue, setSearchValue] = useState('');
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false);
   const [selectedExtracurricular, setSelectedExtracurricular] = useState(null);
 
   useEffect(() => {
-    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
-  }, [bookmarks]);
+    localStorage.setItem(bookmarkKey, JSON.stringify(bookmarks));
+  }, [bookmarks, bookmarkKey]);
 
-  const toggleBookmark = (extracurricularTitle) => {
+  const toggleBookmark = (extracurricularId) => {
     setBookmarks((oldBookmarks) => {
-      const isCurrentlyBookmarked = oldBookmarks.hasOwnProperty(extracurricularTitle);
+      const isCurrentlyBookmarked = oldBookmarks.hasOwnProperty(extracurricularId);
       const newBookmarks = { ...oldBookmarks };
 
       if (isCurrentlyBookmarked) {
-        delete newBookmarks[extracurricularTitle];
+        delete newBookmarks[extracurricularId];
       } else {
-        newBookmarks[extracurricularTitle] = true;
+        newBookmarks[extracurricularId] = true;
       }
 
       return newBookmarks;
@@ -39,8 +42,8 @@ const Display = ({ extracurricularData, schoolName }) => {
   };
 
   const filteredExtracurriculars = extracurricularData.filter(
-    (extracurricular) =>
-      (showBookmarks ? bookmarks.hasOwnProperty(extracurricular.title) : true) &&
+    (extracurricular, index) =>
+      (showBookmarks ? bookmarks.hasOwnProperty(index) : true) &&
       (extracurricular.title.toLowerCase().includes(searchValue.toLowerCase()) ||
         extracurricular.tags.some((tag) => tag.toLowerCase().includes(searchValue.toLowerCase())))
   );
@@ -82,9 +85,9 @@ const Display = ({ extracurricularData, schoolName }) => {
               </div>
             )}
             <div className="grid gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[95%] md:w-[97.5%] mx-auto">
-              {filteredExtracurriculars.map((extracurricular) => (
+              {filteredExtracurriculars.map((extracurricular, index) => (
                 <div
-                  key={extracurricular.taitle}
+                  key={index}
                   className="flex flex-col items-center bg-white border-2 rounded-lg w-full mx-auto mb-2 md:mb-3 text-center"
                 >
                   <div className="w-full">
@@ -106,11 +109,11 @@ const Display = ({ extracurricularData, schoolName }) => {
                     </p>
                     <div
                       className={`rounded-full p-2 md:p-3 border hover:cursor-pointer ease-in-out duration-300 ${
-                        bookmarks.hasOwnProperty(extracurricular.title)
+                        bookmarks.hasOwnProperty(index)
                           ? ' hover:md:bg-opacity-80 text-white border-white bg-[#126954]'
                           : 'hover:border-[#126954] bg-opacity-20 hover:text-[#126954]'
                       }`}
-                      onClick={() => toggleBookmark(extracurricular.title)}
+                      onClick={() => toggleBookmark(index)}
                     >
                       <CiBookmark className="text-lg md:text-xl xl:text-2xl" />
                     </div>
