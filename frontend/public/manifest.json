@@ -1,6 +1,6 @@
 {
-  "short_name": "Scioto Connect",
-  "name": "Scioto Connect",
+  "short_name": "DCS Connect",
+  "name": "DCS Connect",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
