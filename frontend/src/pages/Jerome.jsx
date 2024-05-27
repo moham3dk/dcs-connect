@@ -7,7 +7,7 @@ const Jerome = () => {
   return (
     <>
       <Header schoolName="JEROME" link={'https://google.com'} />
-      <Display schoolName="JEROME" extracurricularData={extracurricularData} pageIdentifier={1} />
+      <Display schoolName="JEROME" extracurricularData={extracurricularData}/>
     </>
   );
 };

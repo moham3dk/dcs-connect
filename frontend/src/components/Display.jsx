@@ -3,11 +3,10 @@ import InfoModal from './InfoModal';
 import { CiCircleInfo } from 'react-icons/ci';
 import { CiBookmark } from 'react-icons/ci';
 
-const Display = ({ extracurricularData, schoolName, pageIdentifier }) => {
-  // Append pageIdentifier to localStorage key
-  const bookmarkKey = `bookmarks_${pageIdentifier}`;
+const Display = ({ extracurricularData, schoolName }) => {
+  const bookmarkKey = `bookmarks_${schoolName}`;
 
-  const [bookmarks, setBookmarks] = useState(JSON.parse(localStorage.getItem(bookmarkKey)) || {});
+  const [bookmarks, setBookmarks] = useState(JSON.parse(localStorage.getItem(bookmarkKey)) || []);
   const [showBookmarks, setShowBookmarks] = useState(false);
   const [searchValue, setSearchValue] = useState('');
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false);
@@ -19,16 +18,12 @@ const Display = ({ extracurricularData, schoolName, pageIdentifier }) => {
 
   const toggleBookmark = (extracurricularId) => {
     setBookmarks((oldBookmarks) => {
-      const isCurrentlyBookmarked = oldBookmarks.hasOwnProperty(extracurricularId);
-      const newBookmarks = { ...oldBookmarks };
-
+      const isCurrentlyBookmarked = oldBookmarks.includes(extracurricularId);
       if (isCurrentlyBookmarked) {
-        delete newBookmarks[extracurricularId];
+        return oldBookmarks.filter(id => id !== extracurricularId);
       } else {
-        newBookmarks[extracurricularId] = true;
+        return [...oldBookmarks, extracurricularId];
       }
-
-      return newBookmarks;
     });
   };
 
@@ -43,7 +38,7 @@ const Display = ({ extracurricularData, schoolName, pageIdentifier }) => {
 
   const filteredExtracurriculars = extracurricularData.filter(
     (extracurricular, index) =>
-      (showBookmarks ? bookmarks.hasOwnProperty(index) : true) &&
+      (showBookmarks ? bookmarks.includes(index) : true) &&
       (extracurricular.title.toLowerCase().includes(searchValue.toLowerCase()) ||
         extracurricular.tags.some((tag) => tag.toLowerCase().includes(searchValue.toLowerCase())))
   );
@@ -109,7 +104,7 @@ const Display = ({ extracurricularData, schoolName, pageIdentifier }) => {
                     </p>
                     <div
                       className={`rounded-full p-2 md:p-3 border hover:cursor-pointer ease-in-out duration-300 ${
-                        bookmarks.hasOwnProperty(index)
+                        bookmarks.includes(index)
                           ? ' hover:md:bg-opacity-80 text-white border-white bg-[#126954]'
                           : 'hover:border-[#126954] bg-opacity-20 hover:text-[#126954]'
                       }`}
