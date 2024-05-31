@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
-import Scioto from './pages/Scioto';
-import Jerome from './pages/Jerome';
-import Coffman from './pages/Coffman';
+import Scioto from './pages/extracurricular_pages/Scioto';
+import Jerome from './pages/extracurricular_pages/Jerome';
+import Coffman from './pages/extracurricular_pages/Coffman';
 
 const App = () => {
   return (

@@ -4,11 +4,11 @@ function commitToGitHub(sheet) {
   var filename;
 
   if (sheet == sciotoExtracurriculars) {
-    filename = "frontend/src/data/extracurriculars/scioto_extracurriculars.json";
+    filename = "frontend/src/data/extracurriculars/scioto.json";
   } else if (sheet == coffmanExtracurriculars) {
-    filename = "frontend/src/data/extracurriculars/coffman_extracurriculars.json";
+    filename = "frontend/src/data/extracurriculars/coffman.json";
   } else if (sheet == jeromeExtracurriculars) {
-    filename = "frontend/src/data/extracurriculars/jerome_extracurriculars.json";
+    filename = "frontend/src/data/extracurriculars/jerome.json";
   } else {
     Logger.log("Unknown sheet: " + sheet.getName());
     return;
