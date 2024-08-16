@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import sciotoImage from '../data/images/scioto.jpeg';
-import jeromeImage from '../data/images/jerome.jpeg';
-import coffmanImage from '../data/images/coffman.jpeg';
+import sciotoImage from '../assets/scioto.jpeg';
+import jeromeImage from '../assets/jerome.jpeg';
+import coffmanImage from '../assets/coffman.jpeg';
 
 const Home = () => {
   return (
