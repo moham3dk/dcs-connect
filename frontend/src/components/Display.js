@@ -1,18 +1,24 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import InfoModal from "./InfoModal";
-import { FaInfoCircle, FaRegBookmark } from "react-icons/fa";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import InfoModal from './InfoModal';
+import { FaInfoCircle, FaRegBookmark } from 'react-icons/fa';
 
 const Display = ({ schoolName, schoolLogo, extracurricularData, formLink }) => {
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false);
   const [selectedExtracurricular, setSelectedExtracurricular] = useState(null);
   const [bookmarksShowing, setBookmarksShowing] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, setSearchQuery] = useState('');
   const [bookmarks, setBookmarks] = useState([]);
   const bookmarkKey = `bookmarks_${schoolName}`;
+
   useEffect(() => {
-    localStorage.setItem(bookmarkKey, JSON.stringify(bookmarks));
-  }, [bookmarks, bookmarkKey]);
+    const storedBookmarks = localStorage.getItem(bookmarkKey);
+    if (storedBookmarks) {
+      setBookmarks(JSON.parse(storedBookmarks));
+    } else {
+      localStorage.setItem(bookmarkKey, JSON.stringify([]));
+    }
+  }, [bookmarkKey]);
 
   const openInfoModal = (extracurricular) => () => {
     setSelectedExtracurricular(extracurricular);
@@ -37,9 +43,7 @@ const Display = ({ schoolName, schoolLogo, extracurricularData, formLink }) => {
     (ec) =>
       (bookmarksShowing ? bookmarks.includes(ec.title) : true) &&
       (ec.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        ec.tags.some((tag) =>
-          tag.toLowerCase().includes(searchQuery.toLowerCase())
-        ))
+        ec.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase())))
   );
 
   return (
@@ -81,9 +85,7 @@ const Display = ({ schoolName, schoolLogo, extracurricularData, formLink }) => {
                   setBookmarksShowing(!bookmarksShowing);
                 }}
               />
-              <p className="text-base md:text-lg text-center">
-                &nbsp;View Bookmarks
-              </p>
+              <p className="text-base md:text-lg text-center">&nbsp;View Bookmarks</p>
             </label>
           </div>
           {/* EC cards */}
@@ -94,18 +96,10 @@ const Display = ({ schoolName, schoolLogo, extracurricularData, formLink }) => {
                   key={index}
                   className="flex flex-col bg-white rounded-lg border-2 border-gray-300 p-4 h-64 items-center justify-center shadow-xl"
                 >
-                  <h1 className="text-center text-primary font-bold text-xl md:text-2xl mb-2">
-                    {ec.title}
-                  </h1>
-                  <p className="text-center text-gray-900 text-base md:text-lg mb-4">
-                    {ec.description}
-                  </p>
+                  <h1 className="text-center text-primary font-bold text-xl md:text-2xl mb-2">{ec.title}</h1>
+                  <p className="text-center text-gray-900 text-base md:text-lg mb-4">{ec.description}</p>
                   <div className="flex space-x-4">
-                    <h1
-                      onClick={openInfoModal(ec)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <h1 onClick={openInfoModal(ec)} target="_blank" rel="noopener noreferrer">
                       <button className="flex items-center text-white p-2 rounded-xl bg-primary hover:bg-opacity-80 ease-in-out duration-300">
                         <FaInfoCircle className="mr-2" />
                         More Info
@@ -114,8 +108,8 @@ const Display = ({ schoolName, schoolLogo, extracurricularData, formLink }) => {
                     <button
                       className={`rounded-full border-2 border-gray-300 p-2 px-3 ease-in-out duration-300 ${
                         bookmarks.includes(ec.title)
-                          ? " bg-primary hover:bg-opacity-80 border-primary text-white border-1 border-opacity-80"
-                          : "hover:border-primary hover:text-primary"
+                          ? ' bg-primary hover:bg-opacity-80 border-primary text-white border-1 border-opacity-80'
+                          : 'hover:border-primary hover:text-primary'
                       }`}
                       onClick={() => {
                         bookmarkExtracurricular(ec.title);
@@ -130,12 +124,7 @@ const Display = ({ schoolName, schoolLogo, extracurricularData, formLink }) => {
           </div>
         </div>
       </div>
-      {isInfoModalOpen && (
-        <InfoModal
-          extracurricular={selectedExtracurricular}
-          onClose={closeInfoModal}
-        />
-      )}
+      {isInfoModalOpen && <InfoModal extracurricular={selectedExtracurricular} onClose={closeInfoModal} />}
     </>
   );
 };
