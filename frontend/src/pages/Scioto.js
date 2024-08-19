@@ -5,7 +5,7 @@ import schoolLogo from '../assets/scioto_logo.png'
 
 const Scioto = () => {
   return (
-    <Display schoolName="Scioto" schoolLogo={schoolLogo} extracurricularData={extracurricularData} formLink={"https://google.com"} />
+    <Display schoolName="Scioto" schoolLogo={schoolLogo} extracurricularData={extracurricularData} formLink={"https://forms.gle/TCyx9ivaZzZsUEMm8"} />
   )
 }
 

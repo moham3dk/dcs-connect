@@ -6,7 +6,7 @@ import schoolLogo from '../assets/coffman_logo.png'
 const Coffman = () => {
   return (
     <div>
-        <Display schoolName="Coffman" schoolLogo={schoolLogo} extracurricularData={extracurricularData} formLink={"https://google.com"} />
+        <Display schoolName="Coffman" schoolLogo={schoolLogo} extracurricularData={extracurricularData} formLink={"https://forms.gle/qs4qq7wJe7SpdP3g6"} />
     </div>
   )
 }
