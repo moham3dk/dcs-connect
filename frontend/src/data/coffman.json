@@ -3,14 +3,7 @@
     "title": "Test",
     "link": "https://github.com/mohamed-khettab/scioto-connect",
     "description": "This is a test. If it shows up on the site, Mohamed is awesome at coding.",
-    "tags": [
-      "Sophomore",
-      "Junior",
-      "STEM",
-      "Open To All",
-      "Bi-weekly",
-      "Paid"
-    ],
+    "tags": ["Sophomore", "Junior", "STEM", "Open To All", "Bi-weekly", "Paid"],
     "location": "None",
     "contact": [
       {
