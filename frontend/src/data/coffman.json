@@ -1,24 +1,5 @@
 [
   {
-<<<<<<< Updated upstream
-    "title": "Test",
-    "link": "https://github.com/mohamed-khettab/scioto-connect",
-    "description": "Test once agai",
-    "tags": [
-      "Sophomore",
-      "Junior",
-      "STEM",
-      "Open To All",
-      "Bi-weekly",
-      "Paid"
-    ],
-    "location": "None",
-    "contact": [
-      {
-        "name": "None",
-        "email": "None",
-        "phone": "None"
-=======
     "title": "Robotics Club",
     "link": "https://example.com/robotics-club",
     "description": "Join our Robotics Club to design, build, and program robots for various competitions. No experience required!",
@@ -240,7 +221,6 @@
         "name": "Sophie Anderson",
         "email": "sophie@example.com",
         "phone": "+3691472580"
->>>>>>> Stashed changes
       }
     ]
   }
