@@ -2,6 +2,8 @@
 
 A club finder for all three high schools in Dublin City Schools (Scioto, Jerome, Coffman). Official district website.
 
+NOTE: The website has not been updated for the 24/25 school year which is why there is placeholder data.
+
 <img width="1512" alt="Screenshot" src="https://github.com/user-attachments/assets/9dbd9ee6-bbf3-4d30-b8d9-d0fe1f63c7e5" />
 
 ## Contributing
