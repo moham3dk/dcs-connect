@@ -1,5 +1,5 @@
 function commitToGitHub(sheet) {
-  var gitHubClient = new GitHubClient('mohamed-khettab', 'dcs-connect', 'dcsconnect', 'my_token');
+  var gitHubClient = new GitHubClient('moham3dk', 'dcs-connect', 'dcsconnect', 'my_token');
   var email = 'my_email';
   var filename;
 
